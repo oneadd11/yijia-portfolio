@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <title>Test Planning &amp; Data-driven Assessment</title>
+  <g stroke="#0066CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="8" y="8" width="32" height="32" rx="5"/>
+    <path d="M16 8V5M32 8V5M8 17h32"/>
+    <path d="m15 33 6-7 5 4 7-8"/>
+    <circle cx="15" cy="33" r="1.5" fill="#0066CC" stroke="none"/>
+    <circle cx="21" cy="26" r="1.5" fill="#0066CC" stroke="none"/>
+    <circle cx="26" cy="30" r="1.5" fill="#0066CC" stroke="none"/>
+    <circle cx="33" cy="22" r="1.5" fill="#0066CC" stroke="none"/>
+  </g>
+</svg>

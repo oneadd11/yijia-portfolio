@@ -1,0 +1,66 @@
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+.vite/
+
+# Local secrets and private environment config
+.env
+.env.*
+!.env.example
+
+# Local build metadata
+*.tsbuildinfo
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.impeccable/
+
+# Test and coverage output
+coverage/
+*.log
+
+# Temporary and merge/editor leftovers
+tmp/
+temp/
+.tmp/
+.temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*~
+
+# One-off visual prototypes / rendered demos
+*-page-demo.html
+*-page-demo.png
+label-color-demo.html
+mobile-preview.html
+case03-section-layout-demos.html
+
+# Local process documents not intended for public GitHub upload
+atoms-case-study-design-rules.md
+capabilities-design-spec.md
+case-dp-rules.md
+case-strategy.md
+case01-layout-prototype.md
+case02-redesign-spec.md
+case03-current-text.md
+case03-launch-audit.md
+design-plan.md
+main-case01-case02-text-audit.md
+
+# Unused or backup visual assets kept locally, excluded from public upload
+assets/brand/footer-owl-*.png
+assets/brand/owl-*.svg
+assets/brand/owl-marks-manifest.json
+assets/cases/case01-strategy-chip-verification.png
+assets/cases/case01-strategy-evidence-correlation.png
+assets/cases/case01-strategy-fib-cut.png
+assets/cases/case01-strategy-mir-overlay.png
+assets/cases/exploded-layered-device-architecture.png
+assets/cases/optimal-design-window-*
+assets/icons/email.svg
+assets/icons/resume.svg

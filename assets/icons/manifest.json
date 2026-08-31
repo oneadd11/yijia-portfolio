@@ -1,0 +1,30 @@
+{
+  "status": "approved",
+  "version": 1,
+  "icons": [
+    {
+      "title": "Failure Investigation",
+      "file": "failure-investigation.svg"
+    },
+    {
+      "title": "Reliability & Validation",
+      "file": "reliability-validation.svg"
+    },
+    {
+      "title": "Test Planning & Data-driven Assessment",
+      "file": "test-planning-assessment.svg"
+    },
+    {
+      "title": "Engineering Execution & Collaboration",
+      "file": "engineering-execution-collaboration.svg"
+    },
+    {
+      "title": "Email",
+      "file": "email.svg"
+    },
+    {
+      "title": "Resume",
+      "file": "resume.svg"
+    }
+  ]
+}

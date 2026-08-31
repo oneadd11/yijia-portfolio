@@ -1,0 +1,640 @@
+/* Case 01: evidence-led localization page */
+body.case-heat-soak .nand-intro {
+  position: relative;
+  z-index: 2;
+  height: auto;
+  padding-bottom: 6px;
+  border-bottom: 0;
+}
+
+body.case-heat-soak .nand-intro::after {
+  position: absolute;
+  right: calc(clamp(320px, 28vw, 400px) + clamp(38px, 4vw, 64px));
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: var(--case-line);
+  content: "";
+}
+
+body.case-heat-soak .nand-intro > p:last-child {
+  max-width: min(
+    818px,
+    calc(100% - clamp(320px, 28vw, 400px) - clamp(38px, 4vw, 64px))
+  );
+}
+
+body.case-heat-soak .nand-section-index {
+  display: block;
+  width: max-content;
+  padding-bottom: 0;
+  color: var(--case-blue);
+  font-size: 18px;
+  font-weight: 630;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  border-bottom: 3px solid var(--case-blue);
+}
+
+.heat-challenge,
+.heat-strategy {
+  position: relative;
+  border-bottom: 0;
+}
+
+.heat-challenge {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr) clamp(320px, 28vw, 400px);
+  column-gap: clamp(38px, 4vw, 64px);
+  align-items: start;
+  min-height: 0;
+  padding: clamp(32px, 4vh, 44px) 0 clamp(38px, 4.5vh, 52px);
+  border-bottom: 0;
+}
+
+.heat-challenge::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 1px;
+  background-image: radial-gradient(circle, var(--case-line) 0.75px, transparent 0.85px);
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-size: 8px 1px;
+  content: "";
+}
+
+.heat-challenge-main {
+  display: contents;
+}
+
+.heat-challenge-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  max-width: 860px;
+  margin-top: 3px;
+}
+
+.heat-challenge-copy p {
+  max-width: none;
+}
+
+.heat-challenge-copy article:first-child {
+  margin-top: 9px;
+}
+
+.heat-challenge h2,
+.heat-strategy h2,
+.heat-strategy h3,
+.heat-bottom-panel h2,
+.heat-bottom-panel h3 {
+  margin: 0;
+  color: var(--case-ink);
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.32;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.heat-bottom-panel h2,
+.heat-bottom-panel h3 {
+  font-size: 14px;
+}
+
+.heat-challenge p,
+.heat-strategy p,
+.heat-bottom-panel p {
+  margin: 8px 0 0;
+  color: #111827;
+  font-size: 14px;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+.heat-diagram-placeholder {
+  display: grid;
+  min-height: 158px;
+  place-items: center;
+  margin: 0;
+  padding: 24px;
+  border: 2px solid var(--case-ink);
+  border-radius: 6px;
+  background: transparent;
+}
+
+body.case-heat-soak .heat-diagram-image {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: clamp(38px, 4.5vh, 52px);
+  left: 0;
+  grid-column: 3;
+  grid-row: 1;
+  width: auto;
+  height: auto;
+  align-self: auto;
+  justify-self: stretch;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  background: transparent;
+  transform: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+body.case-heat-soak .heat-diagram-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: normal;
+  object-fit: contain;
+  object-position: center;
+}
+
+body.case-heat-soak .heat-challenge-main {
+  position: relative;
+  z-index: 2;
+}
+
+body.case-heat-soak .heat-diagram-placeholder figcaption {
+  position: static;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  display: block;
+  justify-content: normal;
+  color: var(--case-ink);
+  font-size: 13px;
+  font-weight: 430;
+  letter-spacing: 0;
+  line-height: 1.45;
+  text-align: center;
+  text-transform: none;
+}
+
+body.case-heat-soak .heat-diagram-placeholder strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--case-ink);
+  font-size: 21px;
+  font-weight: 650;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+body.case-heat-soak .heat-diagram-placeholder span {
+  display: block;
+  margin: 0;
+  color: var(--case-ink-soft);
+  font-size: 13px;
+  font-weight: 430;
+  letter-spacing: 0;
+  line-height: 1.45;
+  text-transform: none;
+}
+
+.heat-strategy {
+  padding: clamp(34px, 4.5vh, 52px) 0 clamp(18px, 2.6vh, 28px);
+}
+
+.heat-strategy::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-image: radial-gradient(circle, var(--case-line) 0.75px, transparent 0.85px);
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-size: 8px 1px;
+  content: "";
+}
+
+.heat-strategy-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.14fr) minmax(0, 1.16fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(8px, 0.8vw, 14px);
+  margin-top: 26px;
+}
+
+.heat-strategy-step {
+  --heat-title-rail: min(100%, 304px);
+  --heat-content-rail: min(94%, 286px);
+  --heat-title-offset: 0px;
+  display: flex;
+  min-height: 344px;
+  flex-direction: column;
+}
+
+.heat-strategy-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: var(--heat-title-rail);
+  margin-bottom: 12px;
+}
+
+.heat-strategy-title-row h3 {
+  min-width: 0;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.28;
+  white-space: nowrap;
+}
+
+.heat-strategy-step > p,
+.heat-strategy-step > .heat-diagram-placeholder--wide {
+  width: var(--heat-content-rail);
+  margin-left: var(--heat-title-offset);
+}
+
+.heat-strategy-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+.heat-strategy-diagram.heat-diagram-placeholder--wide {
+  margin-top: clamp(24px, 3vw, 36px);
+}
+
+.heat-strategy-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.heat-strategy-step:first-child .heat-strategy-diagram img {
+  width: min(91.3%, 261px);
+}
+
+.heat-strategy-diagram--portrait img {
+  width: min(78%, 224px);
+}
+
+.heat-strategy-diagram--fib img {
+  width: min(97.5%, 274px);
+}
+
+.heat-step-number {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 26px;
+  place-items: center;
+  margin-bottom: 0;
+  border: 1px solid var(--case-ink);
+  border-radius: 999px;
+  color: var(--case-ink);
+  font-size: 12px;
+  font-weight: 680;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.heat-strategy p strong {
+  color: var(--case-ink);
+  font-weight: 650;
+}
+
+.heat-strategy-step p + p {
+  font-size: 15px;
+  line-height: 1.48;
+}
+
+.heat-diagram-placeholder--wide {
+  min-height: 148px;
+  margin-top: auto;
+}
+
+.heat-bottom-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(0, 1fr);
+  min-height: 300px;
+  border-bottom: 0;
+}
+
+body.case-heat-soak .nand-footer-nav {
+  margin-top: 12px;
+  border-top: 1px solid var(--case-line);
+}
+
+.heat-bottom-panel {
+  padding: clamp(28px, 4vh, 42px) clamp(22px, 2.2vw, 32px) clamp(14px, 2vh, 22px) 0;
+}
+
+.heat-bottom-panel + .heat-bottom-panel {
+  padding-right: 0;
+  padding-left: clamp(16px, 1.8vw, 24px);
+  border-left: 0;
+}
+
+.heat-contribution-list,
+.heat-outcome-list {
+  display: grid;
+  gap: 21px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+body.case-heat-soak .heat-contribution-list {
+  gap: 28px;
+  margin-top: 32px;
+}
+
+body.case-heat-soak .heat-outcome-list {
+  margin-top: 32px;
+}
+
+body.case-heat-soak .heat-contribution-list > li {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+
+body.case-heat-soak .heat-flow-marker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 1px;
+}
+
+body.case-heat-soak .heat-flow-marker .heat-flow-label {
+  width: 100%;
+}
+
+body.case-heat-soak .heat-contribution-copy {
+  min-width: 0;
+}
+
+body.case-heat-soak .heat-contribution-copy > p {
+  margin-top: 5px;
+}
+
+body.case-heat-soak .heat-outcome-list article > p {
+  margin-top: 5px;
+}
+
+body.case-heat-soak .heat-flow-label {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px;
+  border: 1px solid var(--flow-label-border);
+  border-radius: 999px;
+  background: var(--flow-label-bg);
+  color: var(--flow-label-text);
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0.012em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+body.case-heat-soak .heat-flow-label--sage {
+  --flow-label-bg: #eef7f0;
+  --flow-label-border: #c8ddcc;
+  --flow-label-text: #3d6b48;
+}
+
+body.case-heat-soak .heat-flow-label--sand {
+  --flow-label-bg: #fbf5df;
+  --flow-label-border: #eadcae;
+  --flow-label-text: #7a6425;
+}
+
+body.case-heat-soak .heat-flow-label--lavender {
+  --flow-label-bg: #f7f2fb;
+  --flow-label-border: #dacde9;
+  --flow-label-text: #6c5782;
+}
+
+body.case-heat-soak .heat-flow-label--clay {
+  --flow-label-bg: #fff2ea;
+  --flow-label-border: #ecc9b8;
+  --flow-label-text: #895845;
+}
+
+body.case-heat-soak .heat-flow-arrow {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  display: block;
+  width: 1.5px;
+  height: 53px;
+  margin: 0;
+  color: #98a2b3;
+  background: currentColor;
+  transform: translateX(-50%);
+}
+
+body.case-heat-soak .heat-flow-arrow::after {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 10px;
+  height: 9px;
+  background: currentColor;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.heat-outcome-list h2 {
+  color: var(--case-ink);
+}
+
+@media (max-width: 1280px) {
+  .heat-strategy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .heat-strategy-title-row h3 {
+    white-space: normal;
+  }
+
+  .heat-strategy-step {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 980px) {
+  body.case-heat-soak .nand-intro::after {
+    right: 0;
+  }
+
+  body.case-heat-soak .nand-intro > p:last-child {
+    max-width: min(100%, 818px);
+  }
+
+  .heat-challenge {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .heat-challenge-main {
+    display: block;
+  }
+
+  .heat-challenge-copy {
+    max-width: 620px;
+    margin-top: 22px;
+  }
+
+  .heat-challenge-copy br {
+    display: none;
+  }
+
+  .heat-desktop-break {
+    display: none;
+  }
+
+  .heat-diagram-placeholder {
+    max-width: 420px;
+  }
+
+  body.case-heat-soak .heat-diagram-image {
+    position: static;
+    bottom: auto;
+    grid-column: auto;
+    grid-row: auto;
+    align-self: start;
+    transform: none;
+    width: min(100%, 420px);
+  }
+
+  body.case-heat-soak .heat-diagram-image img {
+    height: auto;
+    mix-blend-mode: normal;
+  }
+}
+
+@media (max-width: 680px) {
+  .heat-challenge,
+  .heat-strategy {
+    padding: 30px 0;
+  }
+
+  .heat-challenge-copy,
+  .heat-strategy-grid,
+  .heat-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heat-strategy-grid {
+    gap: 24px;
+  }
+
+  .heat-strategy-step {
+    --heat-title-rail: 100%;
+    --heat-content-rail: 100%;
+    min-height: 0;
+  }
+
+  .heat-strategy-title-row {
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr);
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-bottom: 9px;
+  }
+
+  .heat-step-number {
+    width: 30px;
+    height: 22px;
+    font-size: 10.5px;
+  }
+
+  .heat-strategy-title-row h3 {
+    font-size: clamp(13px, 3.65vw, 14.25px);
+    line-height: 1.16;
+    letter-spacing: -0.006em;
+    white-space: nowrap;
+  }
+
+  .heat-strategy-step > p,
+  .heat-strategy-step > .heat-diagram-placeholder--wide {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .heat-strategy-step > p {
+    margin-top: 0;
+    font-size: 12.5px;
+    line-height: 1.42;
+  }
+
+  .heat-diagram-placeholder,
+  .heat-diagram-placeholder--wide {
+    min-height: 124px;
+    margin-top: 16px;
+  }
+
+  .heat-strategy-diagram.heat-diagram-placeholder--wide {
+    margin-top: 16px;
+  }
+
+  .heat-strategy-diagram img,
+  .heat-strategy-step:first-child .heat-strategy-diagram img,
+  .heat-strategy-diagram--fib img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body.case-heat-soak .heat-contribution-list > li {
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  body.case-heat-soak .heat-flow-label {
+    width: auto;
+    min-height: 30px;
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+
+  .heat-bottom-panel,
+  .heat-bottom-panel + .heat-bottom-panel {
+    padding: 30px 0;
+    border-left: 0;
+  }
+
+  .heat-bottom-panel + .heat-bottom-panel {
+    border-top: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  body.case-heat-soak .case-detail h1,
+  body.case-heat-soak .nand-intro h1 {
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: -0.022em;
+  }
+
+  body.case-heat-soak .case-detail h2,
+  body.case-heat-soak .case-detail h3 {
+    font-size: 14px;
+    line-height: 1.32;
+    letter-spacing: -0.008em;
+  }
+}

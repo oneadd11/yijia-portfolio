@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <title>Engineering Execution &amp; Collaboration</title>
+  <g stroke="#0066CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="10" width="12" height="10" rx="2.5"/>
+    <rect x="5" y="28" width="12" height="10" rx="2.5"/>
+    <path d="m8.5 15 1.5 1.5 3.5-3.5M8.5 33l1.5 1.5 3.5-3.5"/>
+    <path d="M17 15h3c5 0 5 9 11 9h10M17 33h3c5 0 5-9 11-9"/>
+    <path d="m36 19 5 5-5 5"/>
+  </g>
+</svg>

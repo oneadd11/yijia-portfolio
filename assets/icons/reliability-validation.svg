@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <title>Reliability &amp; Validation</title>
+  <g stroke="#0066CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="24" cy="24" r="16"/>
+    <circle cx="24" cy="24" r="9"/>
+    <circle cx="24" cy="24" r="2.5" fill="#0066CC" stroke="none"/>
+    <path d="M24 5v6M24 37v6M5 24h6M37 24h6"/>
+  </g>
+</svg>

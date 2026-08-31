@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Multilayer Module Failure Localization | Kaia</title>
+    <meta name="description" content="A failure analysis case study on multilayer module failure localization and evidence-driven root-cause evaluation.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="case-detail-v3.css">
+    <link rel="stylesheet" href="heat-soak.css">
+    <script>
+      (function () {
+        function setupMobileNavigation() {
+          var toggle = document.querySelector(".menu-toggle");
+          var navigation = document.querySelector(".primary-nav");
+
+          if (!toggle || !navigation) {
+            return;
+          }
+
+          function closeMenu() {
+            document.body.classList.remove("nav-open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.setAttribute("aria-label", "Open navigation");
+            toggle.innerHTML = '<span class="menu-symbol" aria-hidden="true">Menu</span>';
+          }
+
+          toggle.addEventListener("click", function () {
+            var isOpen = document.body.classList.toggle("nav-open");
+            toggle.setAttribute("aria-expanded", String(isOpen));
+            toggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+            toggle.innerHTML = isOpen
+              ? '<span class="menu-symbol" aria-hidden="true">Close</span>'
+              : '<span class="menu-symbol" aria-hidden="true">Menu</span>';
+          });
+
+          navigation.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", closeMenu);
+          });
+
+          document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && document.body.classList.contains("nav-open")) {
+              closeMenu();
+              toggle.focus();
+            }
+          });
+        }
+
+        function rewriteFilePreviewHomeLinks() {
+          if (window.location.protocol !== "file:" || window.location.pathname.includes("/dist/")) {
+            return;
+          }
+
+          document.querySelectorAll('a[href^="../index.html"]').forEach(function (link) {
+            link.setAttribute("href", link.getAttribute("href").replace("../index.html", "../dist/index.html"));
+          });
+        }
+
+        window.addEventListener("DOMContentLoaded", function () {
+          rewriteFilePreviewHomeLinks();
+          setupMobileNavigation();
+        });
+      })();
+    </script>
+  </head>
+  <body class="case-detail-page case-nand-refined case-heat-soak" data-page="work">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-nav" data-site-nav>
+      <div class="nav-inner">
+        <a class="brand" href="../index.html#overview" aria-label="Kaia home"><img class="brand-image" src="../assets/brand/logos/owl-front-logo.png" alt="" aria-hidden="true"></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span class="menu-symbol" aria-hidden="true">Menu</span></button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+          <a href="../index.html#overview">Overview</a>
+          <a class="is-active" href="../index.html#cases" aria-current="page">Case Studies</a>
+          <a href="../index.html#capabilities">Capabilities</a>
+          <a href="../index.html#journey">Career Journey</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="case-detail">
+      <article class="nand-sheet">
+        <header class="nand-intro">
+          <div class="nand-intro-row">
+            <p class="nand-case-label">Case 01</p>
+          </div>
+          <h1>Multilayer Module Failure Localization &amp; Root Cause Investigation</h1>
+          <p>Localized a sensing-voltage abnormality by correlating functional failure data with physical evidence and progressively testing competing failure hypotheses across a buried multilayer structure.</p>
+        </header>
+
+        <section class="heat-challenge" aria-labelledby="case01-challenge-title">
+          <div class="heat-challenge-main">
+            <p class="nand-section-index" id="case01-challenge-title">Challenge</p>
+            <div class="heat-challenge-copy">
+              <article>
+                <h2>Pixel-Level Localization Through a Multilayer Stack</h2>
+                <p>Sequential layer exposure maintained spatial registration with the failed-pixel location<br>while preserving the surrounding evidence for subsequent analysis.</p>
+              </article>
+              <article>
+                <h2>Failure-Relevant Feature Assessment Across Structural Variation</h2>
+                <p>Spatial correlation with the failed-pixel location helped identify which particles, thickness<br>variations, and interface features were relevant to the failure.</p>
+              </article>
+            </div>
+          </div>
+
+          <figure class="heat-diagram-placeholder heat-diagram-image" aria-label="Exploded layered device architecture">
+            <img src="../assets/cases/diagrams/exploded-layered-device-architecture-page-bg.png" alt="Exploded layered device architecture showing top layer, inner layers, chip, and bottom layer.">
+          </figure>
+        </section>
+
+        <section class="heat-strategy" aria-labelledby="case01-strategy-title">
+          <p class="nand-section-index" id="case01-strategy-title">Strategy</p>
+          <div class="heat-strategy-grid">
+            <article class="heat-strategy-step">
+              <div class="heat-strategy-title-row">
+                <span class="heat-step-number">01</span>
+                <h3>Functional-to-Physical Localization</h3>
+              </div>
+              <p>Used failed-pixel distribution and module architecture to define the physical region of interest.</p>
+              <figure class="heat-strategy-diagram heat-diagram-placeholder--wide">
+                <img src="../assets/cases/diagrams/case01-strategy-functional-localization.png" alt="Failed pixel map connected to the corresponding layer in a multilayer stack.">
+              </figure>
+            </article>
+
+            <article class="heat-strategy-step">
+              <div class="heat-strategy-title-row">
+                <span class="heat-step-number">02</span>
+                <h3>Cross-Method Evidence Correlation</h3>
+              </div>
+              <p>Spatially correlated LIT, CSAM, and CT findings with the failed-pixel distribution to identify evidence consistent with the electrical failure pattern.</p>
+              <figure class="heat-strategy-diagram heat-diagram-placeholder--wide">
+                <img src="../assets/cases/diagrams/case01-strategy-mir-result.png" alt="Failed pixel map compared with the aligned MIR result pattern.">
+              </figure>
+            </article>
+
+            <article class="heat-strategy-step">
+              <div class="heat-strategy-title-row">
+                <span class="heat-step-number">03</span>
+                <h3>Site-Specific Chip Verification</h3>
+              </div>
+              <p>Transferred failed-pixel coordinates to the physical sample and performed targeted FIB analysis to assess direct chip-level damage.</p>
+              <figure class="heat-strategy-diagram heat-strategy-diagram--fib heat-diagram-placeholder--wide">
+                <img src="../assets/cases/diagrams/case01-strategy-fib-cut-wide.png" alt="FIB cut diagram connected to the selected failed-pixel location.">
+              </figure>
+            </article>
+
+            <article class="heat-strategy-step">
+              <div class="heat-strategy-title-row">
+                <span class="heat-step-number">04</span>
+                <h3>Adjacent-Layer Investigation</h3>
+              </div>
+              <p>Extended FIB analysis into the immediately adjacent region to evaluate nearby structural features after direct chip damage was not supported.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="heat-bottom-grid" aria-label="Case 01 contribution and outcome">
+          <div class="heat-bottom-panel">
+            <p class="nand-section-index" id="case01-contribution-title">My Contribution</p>
+            <ol class="heat-contribution-list" aria-labelledby="case01-contribution-title">
+              <li>
+                <div class="heat-flow-marker">
+                  <span class="heat-flow-label heat-flow-label--sage">Select Region</span>
+                  <span class="heat-flow-arrow" aria-hidden="true"></span>
+                </div>
+                <div class="heat-contribution-copy">
+                  <h3>Initial Localization to the Sensing-Chip Region</h3>
+                  <p>Used failed-pixel distribution and module architecture to define<br class="heat-desktop-break"> the first-priority region of interest before destructive analysis.</p>
+                </div>
+              </li>
+              <li>
+                <div class="heat-flow-marker">
+                  <span class="heat-flow-label heat-flow-label--sand">Weigh Evidence</span>
+                  <span class="heat-flow-arrow" aria-hidden="true"></span>
+                </div>
+                <div class="heat-contribution-copy">
+                  <h3>Spatial Correlation of Nondestructive Evidence</h3>
+                  <p>Compared LIT, CSAM, and CT findings with failed-pixel locations<br class="heat-desktop-break"> to determine which indications were spatially relevant and worth pursuing.</p>
+                </div>
+              </li>
+              <li>
+                <div class="heat-flow-marker">
+                  <span class="heat-flow-label heat-flow-label--lavender">Refine Hypothesis</span>
+                  <span class="heat-flow-arrow" aria-hidden="true"></span>
+                </div>
+                <div class="heat-contribution-copy">
+                  <h3>FIB Assessment at the Selected Pixel</h3>
+                  <p>Site-specific FIB analysis found no direct damage at the selected pixel,<br class="heat-desktop-break"> shifting the investigation away from intrinsic chip failure.</p>
+                </div>
+              </li>
+              <li>
+                <div class="heat-flow-marker">
+                  <span class="heat-flow-label heat-flow-label--clay">Redirect Analysis</span>
+                </div>
+                <div class="heat-contribution-copy">
+                  <h3>Redirecting the Analysis to Adjacent Structural Layers</h3>
+                  <p>Used the negative FIB result to shift follow-up cross-sectional analysis<br class="heat-desktop-break"> toward chip-adjacent layers and evaluate alternative structural causes.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="heat-bottom-panel">
+            <p class="nand-section-index" id="case01-outcome-title">Conclusion</p>
+            <div class="heat-outcome-list" aria-labelledby="case01-outcome-title">
+              <article>
+                <h2>Failure Region Narrowed</h2>
+                <p>The investigation converged from the full multilayer stack to the sensing-chip region and adjacent structural layers.</p>
+              </article>
+              <article>
+                <h2>Direct Chip Damage Deprioritized</h2>
+                <p>FIB analysis found no obvious chip damage or foreign-material intrusion, shifting attention away from intrinsic chip failure.</p>
+              </article>
+              <article>
+                <h2>Structural Improvement Direction Defined</h2>
+                <p>Prioritized layer geometry, thickness uniformity, and particle control near the affected region for follow-up validation and design improvement.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <nav class="nand-footer-nav" aria-label="Case navigation">
+          <a href="../index.html#cases">Case index</a>
+          <a href="nand.html">Next: Case 02</a>
+        </nav>
+      </article>
+    </main>
+  </body>
+</html>

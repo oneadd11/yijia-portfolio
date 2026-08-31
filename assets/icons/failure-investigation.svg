@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <title>Failure Investigation</title>
+  <g stroke="#0066CC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="21.5" cy="21.5" r="14"/>
+    <path d="m31.4 31.4 8.1 8.1"/>
+    <path d="M12.5 22h3.5l3-7.5 5.5 15 3-7.5H31"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+# Keep Codex/ripgrep searches focused on authored frontend files.
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+*.log
+tmp/
+temp/
+.tmp/
+.temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*~
+*-page-demo.html
+*-page-demo.png
