@@ -442,7 +442,7 @@ function App() {
                       </svg>
                       <span>jiayi_office@163.com</span>
                     </a>
-                    <a className="footer-action footer-action-resume" href="/resume.pdf">
+                    <a className="footer-action footer-action-resume" href="./resume.html">
                       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                         <path d="M7.25 3.75h7.1l2.4 2.45v14.05H7.25z" />
                         <path d="M14.25 3.95v3.3h3.2" />

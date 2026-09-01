@@ -31,7 +31,8 @@ Personal portfolio website for presenting homepage content, capability areas, an
 │   ├── content/
 │   └── maintenance/
 ├── public/
-│   └── resume.pdf             # Static resume served at /resume.pdf
+│   └── resume.pdf             # Static resume file used by resume.html
+├── resume.html                # Clean resume preview and download page
 ├── styles.css                 # Shared site styles for static pages
 ├── script.js                  # Shared behavior for static pages
 ├── package.json               # Scripts and dependencies
@@ -88,7 +89,7 @@ The GitHub repository should contain source files, documentation, and production
 - Put reusable icons in `assets/icons/`.
 - Put case diagrams in `assets/cases/diagrams/` and case-specific icons in `assets/cases/icons/`.
 - Keep public maintenance docs in `docs/maintenance/` and public text/reference docs in `docs/content/`.
-- Keep the resume PDF at `public/resume.pdf` so the homepage footer link resolves to `/resume.pdf`.
+- Keep the resume PDF at `public/resume.pdf`; the homepage footer links to `resume.html`, which previews and downloads that file.
 - Use descriptive asset names that include the case or page context, for example `case02-nand-system-diagram.png`.
 - Avoid moving or renaming assets while mobile layout work is still active unless all references are updated and tested.
 - Keep temporary demos, mobile previews, and design experiments out of the deployment source when preparing for GitHub.
@@ -110,4 +111,4 @@ Before uploading to GitHub:
 - Finish mobile layout QA and responsive adjustments.
 - Decide which remaining design, audit, and prototype `.md` files should remain public in GitHub.
 - Demo and preview files such as `label-color-demo.html`, `mobile-preview.html`, and `case03-section-layout-demos.html` are currently excluded from GitHub.
-- Resume link is connected through `public/resume.pdf`; replace that file when the resume is updated.
+- Resume link is connected through `resume.html` and `public/resume.pdf`; replace the PDF when the resume is updated.
