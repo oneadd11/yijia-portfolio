@@ -16,7 +16,9 @@ export default defineConfig({
       name: 'file-protocol-friendly-html',
       enforce: 'post',
       transformIndexHtml(html) {
-        return html.replace(/\s+crossorigin(?:="[^"]*")?/g, '')
+        return html
+          .replace(/\s+crossorigin(?:="[^"]*")?/g, '')
+          .replace(/(["'])\.\/public\//g, '$1./')
       },
     },
     {
@@ -58,6 +60,7 @@ export default defineConfig({
         heatSoak: 'cases/heat-soak.html',
         nand: 'cases/nand.html',
         mlcc: 'cases/mlcc.html',
+        resume: 'resume.html',
       },
     },
   },
