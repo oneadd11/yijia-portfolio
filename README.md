@@ -111,4 +111,4 @@ Before uploading to GitHub:
 - Finish mobile layout QA and responsive adjustments.
 - Decide which remaining design, audit, and prototype `.md` files should remain public in GitHub.
 - Demo and preview files such as `label-color-demo.html`, `mobile-preview.html`, and `case03-section-layout-demos.html` are currently excluded from GitHub.
-- Resume link is connected through `resume.html`, `public/resume.pdf`, and the high-resolution `public/resume-preview.png`; replace the PDF and regenerate the preview when the resume is updated.
+- Resume link is connected through `resume.html`, `public/resume.pdf`, and responsive PNG previews in `public/resume-preview-*.png`; replace the PDF and regenerate the previews when the resume is updated.

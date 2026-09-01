@@ -1489,10 +1489,10 @@ ol {
 
   .hero-section .section-inner {
     display: grid;
-    min-height: calc(100dvh - var(--nav-height));
+    min-height: 100svh;
     align-items: center;
-    padding-top: calc(var(--nav-height) + 34px);
-    padding-bottom: 110px;
+    padding-top: calc(var(--nav-height) + 96px);
+    padding-bottom: 96px;
   }
 
   .hero-minimal-copy {
