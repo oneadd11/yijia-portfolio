@@ -2045,6 +2045,17 @@ body.resume-page {
   text-rendering: optimizeLegibility;
 }
 
+body.resume-page .site-nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 300;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: none;
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+}
+
 .resume-shell {
   width: min(100%, 1180px);
   margin: 0 auto;
