@@ -9,10 +9,23 @@
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="stylesheet" href="./styles.css">
     <title>Resume | Yi Jia Portfolio</title>
+    <script type="module" src="./script.js?v=4"></script>
   </head>
-  <body class="resume-page">
+  <body class="resume-page" data-page="resume">
     <a class="skip-link" href="#resume-viewer">Skip to resume</a>
-    <header class="resume-nav" aria-hidden="true"></header>
+    <header class="site-nav" data-site-nav>
+      <div class="nav-inner">
+        <a class="brand" href="./index.html#overview" aria-label="Kaia home"><img class="brand-image" src="./assets/brand/logos/owl-front-logo.png" alt="" aria-hidden="true"></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span class="menu-symbol" aria-hidden="true">Menu</span></button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+          <a href="./index.html#overview">Overview</a>
+          <a href="./index.html#cases">Case Studies</a>
+          <a href="./index.html#capabilities">Capabilities</a>
+          <a href="./index.html#journey">Career Journey</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
     <main class="resume-shell">
       <header class="resume-header" aria-label="Resume actions">
         <a class="resume-download-button" href="./resume.pdf" download>
